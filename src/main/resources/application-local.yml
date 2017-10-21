@@ -1,0 +1,19 @@
+info:
+  app:
+    name: EVA - Order (DEV)
+    description: EVA - Order Application
+
+server:
+  port: 7070
+
+#---------------- DataSource Configuration ----------------------#
+
+spring:
+  data:
+    mongodb:
+      host: 172.17.0.2
+      port: 27017
+      uri: mongodb://172.17.0.2/personal-wallet-dev
+      database: personal-wallet-dev
+      repositories:
+        enabled: true
