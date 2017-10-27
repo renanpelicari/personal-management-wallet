@@ -7,5 +7,6 @@ import personal.management.wallet.model.entity.BankDealMethod;
 /**
  * {@link BankDealMethod} {@link MongoRepository}
  */
+@Repository
 public interface BankDealMethodRepository extends MongoRepository<BankDealMethod, Long> {
 }

@@ -1,15 +1,24 @@
 package personal.management.wallet.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.NonFinal;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotNull;
-import java.time.LocalDate;
 
 /**
  * Deal Method Model
  */
 @Data
+@Builder
+@Document
+@NonFinal
+@AllArgsConstructor
+@NoArgsConstructor
 public class DealMethod {
 
     @Id

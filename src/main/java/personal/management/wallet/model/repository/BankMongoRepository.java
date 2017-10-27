@@ -7,5 +7,6 @@ import personal.management.wallet.model.entity.Bank;
 /**
  * {@link Bank} {@link MongoRepository}
  */
+@Repository
 public interface BankMongoRepository extends MongoRepository<Bank, Long> {
 }

@@ -7,5 +7,6 @@ import personal.management.wallet.model.entity.CreditCardDealMethod;
 /**
  * {@link CreditCardDealMethod} {@link MongoRepository}
  */
+@Repository
 public interface CreditCardDealMethodRepository extends MongoRepository<CreditCardDealMethod, Long> {
 }
