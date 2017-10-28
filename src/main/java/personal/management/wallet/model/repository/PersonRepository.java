@@ -8,7 +8,7 @@ import personal.management.wallet.model.entity.Person;
 import java.util.HashSet;
 
 /**
- * {@link Person} {@link MongoRepository}
+ * The {@link MongoRepository}  and {@link CrudRepository} for {@link Person} entity
  */
 @Repository
 public interface PersonRepository extends MongoRepository<Person, String>, CrudRepository<Person, String> {

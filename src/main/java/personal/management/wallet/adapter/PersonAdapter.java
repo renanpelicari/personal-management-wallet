@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Adapter for {@link Person}
+ * Adapter for {@link Person} and {@link PersonResponseVo}
  */
 public class PersonAdapter {
 

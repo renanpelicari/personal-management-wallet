@@ -5,8 +5,8 @@ import org.springframework.stereotype.Repository;
 import personal.management.wallet.model.entity.Bank;
 
 /**
- * {@link Bank} {@link MongoRepository}
+ * The {@link MongoRepository} for {@link Bank} entity
  */
 @Repository
-public interface BankMongoRepository extends MongoRepository<Bank, Long> {
+public interface BankRepository extends MongoRepository<Bank, Long> {
 }

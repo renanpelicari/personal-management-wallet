@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 /**
- * Credit Card Deal Method Model
+ * Credit Card Deal Method Entity
  */
 @Data
 @Document

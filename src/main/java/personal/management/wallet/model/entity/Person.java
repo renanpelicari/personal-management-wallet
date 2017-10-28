@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import javax.validation.constraints.NotNull;
 
 /**
- * Person Model
+ * Person Entity
  */
 @Data
 @Builder

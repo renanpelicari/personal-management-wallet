@@ -11,7 +11,8 @@ import personal.management.wallet.vo.response.PersonResponseVo;
 import java.util.List;
 
 /**
- * The implementation of {@link PersonService}
+ * The implementation of {@link PersonService} interface
+ * to handle with {@link PersonRepository}
  */
 @Slf4j
 @Service
@@ -29,7 +30,7 @@ public class PersonServiceImpl implements PersonService {
     }
 
     /**
-     * @see PersonService#registerPerson
+     * @see PersonService#registerPerson(PersonRequestVo)
      */
     @Override
     public void registerPerson(final PersonRequestVo personRequestVo) {
@@ -39,7 +40,7 @@ public class PersonServiceImpl implements PersonService {
     }
 
     /**
-     * @see PersonService#findPeopleByNameContaining
+     * @see PersonService#findPeopleByNameContaining(String)
      */
     @Override
     public List<PersonResponseVo> findPeopleByNameContaining(final String name) {
@@ -51,7 +52,7 @@ public class PersonServiceImpl implements PersonService {
     }
 
     /**
-     * @see PersonService#findPersonById
+     * @see PersonService#findPersonById(String)
      */
     @Override
     public PersonResponseVo findPersonById(final String id) {

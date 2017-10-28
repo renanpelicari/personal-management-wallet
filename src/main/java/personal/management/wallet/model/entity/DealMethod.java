@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import javax.validation.constraints.NotNull;
 
 /**
- * Deal Method Model
+ * Deal Method Entity
  */
 @Data
 @Builder

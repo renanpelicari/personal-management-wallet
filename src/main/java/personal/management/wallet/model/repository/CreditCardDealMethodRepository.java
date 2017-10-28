@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import personal.management.wallet.model.entity.CreditCardDealMethod;
 
 /**
- * {@link CreditCardDealMethod} {@link MongoRepository}
+ * The {@link MongoRepository} for {@link CreditCardDealMethod} entity
  */
 @Repository
 public interface CreditCardDealMethodRepository extends MongoRepository<CreditCardDealMethod, Long> {

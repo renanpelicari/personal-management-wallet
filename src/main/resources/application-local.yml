@@ -17,3 +17,13 @@ spring:
       database: personal-wallet-dev
       repositories:
         enabled: true
+endpoints:
+  default:
+    web:
+      enabled: true
+  info:
+    enabled: true
+  beans:
+    enabled: true
+logging:
+  level: debug

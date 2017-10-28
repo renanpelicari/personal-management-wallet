@@ -13,12 +13,12 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * Rest Controller for Person
+ * Rest Controller for {@link personal.management.wallet.model.entity.Person}
  */
 @Slf4j
 @RestController
 @Api(value = "api-person")
-@RequestMapping(value = "/api/person", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/application/api/person", produces = MediaType.APPLICATION_JSON_VALUE)
 public class PersonController {
 
     private PersonServiceImpl personService;

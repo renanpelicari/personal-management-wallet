@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 /**
- * Bank Deal Method
+ * Bank Deal Entity
  */
 @Data
 @Document

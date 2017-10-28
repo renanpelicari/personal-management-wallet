@@ -12,9 +12,18 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
+/**
+ * The Swagger config.
+ */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
+
+    /**
+     * API Configuration and Information
+     *
+     * @return the {@link Docket}
+     */
     @Bean
     public Docket documentation() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -22,12 +31,17 @@ public class SwaggerConfig {
             .apiInfo(metadata())
             .select()
             .apis(RequestHandlerSelectors.any())
-            .paths(regex("/api/.*"))
+            .paths(regex("/application/api/*.*"))
             .build()
             .pathMapping("/")
             .apiInfo(metadata());
     }
 
+    /**
+     * UI Configuration
+     *
+     * @return the {@link UiConfiguration}
+     */
     @Bean
     public UiConfiguration uiConfig() {
         return UiConfiguration.DEFAULT;

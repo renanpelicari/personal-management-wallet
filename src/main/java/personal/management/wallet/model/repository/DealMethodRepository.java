@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import personal.management.wallet.model.entity.DealMethod;
 
 /**
- * {@link DealMethod} {@link MongoRepository}
+ * The {@link MongoRepository} for {@link DealMethod} entity
  */
 @Repository
 public interface DealMethodRepository extends MongoRepository<DealMethod, Long> {

@@ -6,7 +6,7 @@ import personal.management.wallet.vo.response.PersonResponseVo;
 import java.util.List;
 
 /**
- * The service interface for Person
+ * The Person Interface Service
  */
 public interface PersonService {
 

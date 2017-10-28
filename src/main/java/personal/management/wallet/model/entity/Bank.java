@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import javax.validation.constraints.NotNull;
 
 /**
- * Bank Model
+ * Bank Entity
  */
 @Data
 @Builder
