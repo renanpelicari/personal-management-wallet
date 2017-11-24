@@ -37,7 +37,7 @@ public class PersonAdapter {
         Assert.notNull(model.getId(), "The ID is required!");
         Assert.notNull(model.getFullName(), "The full name is required!");
         return PersonResponseVo.builder()
-            .id(model.getId())
+            .id(model.getId().toString())
             .fullName(model.getFullName())
             .build();
     }

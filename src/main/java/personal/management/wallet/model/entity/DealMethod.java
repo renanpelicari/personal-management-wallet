@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.NonFinal;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -22,7 +23,7 @@ import javax.validation.constraints.NotNull;
 public class DealMethod {
 
     @Id
-    private Long id;
+    private ObjectId id;
 
     @NotNull
     private String name;
